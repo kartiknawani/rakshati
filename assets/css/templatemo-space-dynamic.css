@@ -1316,12 +1316,16 @@ contact
 .contact-us .section-heading h2 span {
   color: #fff;
 }
-.maps iframe {
+.contact-us .section-heading .maps iframe{
+  width: 600px;
+  height: 400px;
+  display: inline-block;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+
 }
 .contact-us .section-heading p {
   color: #fff;
@@ -1462,6 +1466,13 @@ responsive
     display: none;
   }
 }
+@media (max-width: 1310px){
+  .contact-us .section-heading .maps iframe{
+    width: 500px;
+    height: 200px;
+    -moz-box-align: center;
+  }
+}
 
 @media (max-width: 992px) {
   .main-banner {
@@ -1554,6 +1565,10 @@ responsive
   }
   .contact-us .section-heading {
     text-align: center;
+  }
+   .contact-us .section-heading .maps iframe{
+    width: auto;
+    height: auto;
   }
   form#contact {
     margin-left: 0px;
