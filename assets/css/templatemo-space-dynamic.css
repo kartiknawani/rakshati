@@ -1316,7 +1316,13 @@ contact
 .contact-us .section-heading h2 span {
   color: #fff;
 }
-
+.maps iframe {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
 .contact-us .section-heading p {
   color: #fff;
   margin-top: 30px;
