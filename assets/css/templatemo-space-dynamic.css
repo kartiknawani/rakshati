@@ -850,7 +850,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 226px 0px 120px 0px;
+  padding: 180px 0px 120px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -959,7 +959,7 @@ About Us Style
 */
 
 #about {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .about-us {
@@ -1097,6 +1097,7 @@ Portfolio
 
 .our-portfolio {
   padding-top: 120px;
+  padding-bottom: 100px;
   margin-top: 0px;
 }
 
@@ -1327,6 +1328,7 @@ contact
   -o-border-radius: 20px;
 
 }
+
 .contact-us .section-heading p {
   color: #fff;
   margin-top: 30px;
@@ -1354,12 +1356,60 @@ contact
   font-size: 22px;
   margin-left: 30px;
   margin-right: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .phone-info h4 span a {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
+}
+.d_flex {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+.mb_15 {
+  margin-bottom: 15px;
+}
+.pl_15 {
+  padding-left: 15px;
+}
+.px_10 {
+  padding-left: 10px;
+  padding-right: 10px
+}
+.py_5 {
+  padding-top: 5px;
+  padding-bottom: 5px
+}
+.mr_15 {
+  margin-right: 15px;
+}
+.text_white {
+  color: #fff!important;
+}
+.text_left {
+  text-align: left;
+}
+.flex_Middel {
+  align-items: center;
+}
+.theme_graadint_background {
+  background: #00aff0;
+  background: linear-gradient(90deg, #00aff0 35%, #1e5295 100%)
+}
+.app_btn {
+  border: 1px solid #00aff0;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px
 }
 
 form#contact .contact-dec {
@@ -1566,10 +1616,11 @@ responsive
   .contact-us .section-heading {
     text-align: center;
   }
-   .contact-us .section-heading .maps iframe{
+  .contact-us .section-heading .maps iframe{
     width: auto;
     height: auto;
   }
+  
   form#contact {
     margin-left: 0px;
     margin-top: 30px;
