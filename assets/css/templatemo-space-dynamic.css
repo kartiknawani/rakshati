@@ -1825,16 +1825,14 @@ responsive
   margin-bottom: 3%;
   border-radius: 10%;
   max-width: 30%;
-  filter:grayscale(100%);
-  -webkit-filter:grayscale(100%);
+  filter:none;
+  -webkit-filter:none;
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
 }
 .companies .row011 img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
   filter: drop-shadow(5px 5px 5px #222);
 }
 }
