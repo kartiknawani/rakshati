@@ -1766,6 +1766,9 @@ responsive
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
   }
+  .h-content img{
+  width: 100px;
+}
 }
 
 @media (max-width: 767px) {
