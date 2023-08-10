@@ -156,8 +156,7 @@ img {
     margin: 5px;
 }
 .logoo img{
-  width:20%;
-  align-content: center;
+  width:fit-content;
 }
 
 /* 
@@ -683,6 +682,10 @@ header
 .col-lg-2{
   width:30%;
 }
+.sso ul li{
+  list-style:disc;
+  margin:10px;
+}
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -969,11 +972,22 @@ Banner Style
 .main-banner .left-content {
   margin-right: 45px;
   margin-top: 30%;
+  
+}
+.main-banner .left-contentt {
+  margin-top: 10%;
+  text-align: center;
 }
 
 .main-banner .left-content h6 {
   text-transform: uppercase;
   font-size: 18px;
+  color: #fe3f40;
+  margin-bottom: 15px;
+}
+.main-banner .left-contentt h6 {
+  text-transform: uppercase;
+  font-size: 40px;
   color: #fe3f40;
   margin-bottom: 15px;
 }
@@ -984,6 +998,13 @@ Banner Style
   color: #2a2a2a;
   line-height: 72px;
 }
+.main-banner .left-contentt h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2a2a2a;
+  line-height: 72px;
+}
+
 
 .main-banner .left-content h2 em {
   color: #03a4ed;
@@ -1194,6 +1215,14 @@ Services Style
   width: 90%;
 }
 
+.links img{
+  margin-top:3%;
+width:5%;
+}
+.sso{
+  text-align: justify;
+  margin-top: 2%;
+}
 
 /* 
 ---------------------------------------------
@@ -1838,6 +1867,11 @@ responsive
   .main-banner {
     padding-top: 120px;
   }
+  .icontext{
+    font-size:60%;
+    font-size: 2vw;
+    
+  }
   .main-banner .left-content {
     margin-right: 0px;
     text-align: center;
@@ -1972,9 +2006,14 @@ responsive
   color: #fff;
   font-size: 85%;
 }
+.links img{
+  margin-top:3%;
+width:10%;
+}
 }
 
 @media (max-width: 767px) {
+ 
   .about-us .left-image {
     bottom: -280px;
   }
@@ -2015,7 +2054,7 @@ responsive
 }
 .icontext{
   font-size:60%;
-  font-size: 4vw;
+  font-size: 3.5vw;
   
 }
 .companies .row011  {
