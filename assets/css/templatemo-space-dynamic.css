@@ -999,10 +999,10 @@ Banner Style
   line-height: 72px;
 }
 .main-banner .left-contentt h2 {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 600;
   color: #2a2a2a;
-  line-height: 72px;
+  line-height: 45px;
 }
 
 
@@ -1222,6 +1222,43 @@ width:5%;
 .sso{
   text-align: justify;
   margin-top: 2%;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.collapsible {
+  background-color: rgba(245, 245, 245,.6);
+  color: white;
+  cursor: pointer;
+  padding: 2%;
+  margin-top: 2%;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #fae7e7;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
 }
 
 /* 
@@ -2081,5 +2118,9 @@ width:10%;
 }
 .companies .impcomp img{
   max-width: 50%;
+}
+.main-banner .left-contentt h2 {
+  font-size: 25px;
+  line-height: 45px;
 }
 }
