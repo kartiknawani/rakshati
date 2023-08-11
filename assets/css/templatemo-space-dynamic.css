@@ -1245,21 +1245,17 @@ width:5%;
   -o-border-radius: 15px;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #fae7e7;
 }
 
 .collapsible:after {
-  content: '\002B';
   color: white;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
-.active:after {
-  content: "\2212";
-}
 
 /* 
 ---------------------------------------------
