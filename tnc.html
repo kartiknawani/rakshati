@@ -66,7 +66,8 @@
           <div class="align-self-center">
             <div class="left-contentt header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
               <h6><hr>TERMS & CONDITIONS<hr></h6>
-              <h2><u>CANCELLATION AND REFUND POLICY </u> </h2>
+              
+              <button class="collapsible"><h2>↓ <u>CANCELLATION AND REFUND POLICY</u> ↓</h2></button>
               <div class="sso">
                 <h5>Subscription Services Overview</h5>
 
@@ -78,8 +79,7 @@
                     <li>You agree to provide accurate and up-to-date information during the subscription process.</li>
                       <li>You agree to maintain the confidentiality of your account credentials and not share them with others.</li>
                         <li>You agree to the terms and conditions of this agreement, including the cancellation and no refund policy.</li></ul>
-                </div>
-                <div class="sso">
+               
                 <h5>Subscription Fee and Payment</h5>
                 <br>
                 The subscription fee for accessing our financial advice services is INR 1000 per month for existing clients and INR 2500 for  non existing clients. Subscribers must select the recurring payment option, and the subscription fee will be automatically deducted from the provided payment method on a monthly basis until the subscription is canceled.
@@ -117,10 +117,11 @@
                 These terms and conditions shall be governed by and construed in accordance with the laws of India. Any disputes arising from or in connection with the subscription services shall be subject to the exclusive jurisdiction of the courts in Delhi, India.
                 <br>
                 <br><p>By subscribing to Rakshati Finserv's financial advice services, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you do not agree with any part of these terms, you should refrain from subscribing to our services.
+                  <h5> For any further clarifications or inquiries, please contact our customer support.</h5>
                 </p>
                 </div>
-               <h5> For any further clarifications or inquiries, please contact our customer support.</h5>
-               <h2><br><u>Rakshati Finserv Privacy Policy</u></h2>
+               
+               <button class="collapsible"><h2>↓ <u>Rakshati Finserv Privacy Policy</u> ↓</h2></button>
                <div class="sso">
                 <p>Rakshati Finserv respects the privacy of its subscribers and is committed to protecting their personal information. This privacy policy describes how we collect, use, and share your personal information when you subscribe to our financial advice services.
                   <br></p>
@@ -174,7 +175,7 @@
                  
                  <p>If you have any questions about this privacy policy, please contact us at <a href= mailto:"info@rakshati.in">info@rakshati.in</a></p>
                </div>
-               <h2><br><u>Rakshati Finserv Terms of Service</u></h2>
+               <button class="collapsible"><h2>↓ <u>Rakshati Finserv Terms of Service</u> ↓</h2></button>
                <div class="sso">
                 <br><br><h5>1. Introduction</h5><br>
 
@@ -358,6 +359,21 @@ These Terms may be executed in one or more counterparts, each of which will be d
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
-
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 </html>
